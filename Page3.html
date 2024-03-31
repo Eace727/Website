@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Final Project</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background: #F7EDDE;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #2A324B;
+        }
+
+        .sidebar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #767B91;
+            padding: 8px 0;
+            top: 0;
+            position: fixed;
+            width: 100%;
+            left: 0;
+        }
+
+        .sidebar a {
+            color: #F7EDDE;
+            background-color: #ffffff2d;
+            text-decoration: none;
+            padding: 8px 6%;
+            transition: background-color 0.3s ease;
+            border-radius: 30px;
+        }
+
+        .sidebar a:hover {
+            background-color: #555;
+        }
+
+        .sidebar a.active {
+            background-color: #555;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #FFF;
+            color: #333;
+            border-radius: 20px;
+            padding: 30px;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        .content ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .content li {
+            margin-bottom: 10px;
+        }
+
+        .content pre code {
+            color: #000;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <td>
+            <div class="sidebar">
+                <a href="Index.html">Home</a>
+                <a href="Page2.html">Web Technologies</a>
+                <a class="active"  href="Page3.html">Online Threats</a>
+                <a href="Page4.html">E-commerce</a>
+                <a href="Page5.html">Find me</a>
+                <a href="Citations.html">Citations</a>
+            </div>
+        </td>
+    </table>
+    
+    <div class="content">
+        <h1>Common Online Threats and Security Measures</h1>
+        <div class="image-with-text">
+        <h2>Malware</h2>
+        <img src="malwarebytes.png" alt="malwarebytes icon" style="float: right; margin-left: 40px; margin-bottom: 30px;">
+        <p style="text-align: left;">Malware, short for malicious software, encompasses a variety of threats including viruses, worms, Trojans, ransomware, and spyware. These malicious programs can infect computers and networks, causing damage to data, stealing sensitive information, or disrupting operations. Viruses typically attach themselves to executable files and replicate when the infected file is executed. Worms spread independently through networks, exploiting vulnerabilities to infect other devices. Trojans disguise themselves as legitimate software to trick users into installing them, allowing attackers to gain unauthorized access or control. Ransomware encrypts files or systems, demanding payment for decryption keys. To mitigate these threats, users should install reputable antivirus software, keep their systems and applications updated with the latest security patches, exercise caution when downloading files or clicking on links from unknown sources, and regularly back up their data to prevent loss in case of an attack.</p>
+        </div>
+        <div class="image-with-text">
+            <h2 style="text-align: right;">Phishing and Social Engineering</h2>
+            <img src="phishing.png" alt="phishing" style="float: left; margin-right: 10px; margin-bottom: 80px; border-radius: 30px; border: 3px solid black;">
+            <p style="text-align: left;">Phishing is a form of cyber attack where attackers impersonate trusted entities, such as banks, government agencies, or reputable companies, to trick individuals into divulging sensitive information or performing actions that compromise security. Phishing attacks often involve emails, text messages, or fake websites that appear legitimate, luring victims to provide login credentials, financial details, or personal information. Social engineering techniques exploit human psychology to manipulate individuals into disclosing confidential data or performing actions that benefit the attacker. These attacks can be sophisticated and convincing, relying on tactics like pretexting, baiting, or pretexting. To defend against phishing and social engineering, users should be vigilant and skeptical of unsolicited communications, verify the legitimacy of websites and email senders before providing sensitive information, enable multi-factor authentication for online accounts, and educate themselves and their employees about common scams and deception tactics.</p>
+        </div>
+        <div class="image-with-text">
+        <h2 style="text-align: left;">Data Breaches and Identity Theft</h2>
+        <img src="firewall.png" alt="firewall icon" style="float: right; margin-left: 20px; margin-bottom: 40px;">
+        <p style="text-align: left;">Data breaches occur when unauthorized parties gain access to sensitive information stored by organizations, resulting in the exposure or theft of personal, financial, or proprietary data. These breaches can have serious consequences, including financial losses, reputational damage, and legal repercussions. Identity theft involves the unauthorized use of someone's personal information, such as their name, Social Security number, or credit card details, to commit fraud or other criminal activities. Data breaches often serve as the source of stolen data used in identity theft schemes. To mitigate the risks of data breaches and identity theft, organizations should implement robust security measures such as encryption, access controls, and network monitoring to safeguard sensitive data. Individuals should regularly monitor their financial accounts for suspicious activity, use strong, unique passwords for online accounts, avoid oversharing personal information on social media, and consider using identity theft protection services to monitor for signs of fraud. Additionally, regulatory compliance with data protection laws such as GDPR or CCPA can help organizations ensure the secure handling of personal data and mitigate the impact of potential breaches.</p>
+        <img src="identity theft.png" alt="identity theft" style="float: right; margin-left: 20px; margin-bottom: 10px;">
+        </div>
+                
+        <h2>External Internet Security Resources</h2>
+        <ul>
+            <li><a href="https://owasp.org">OWASP (Open Web Application Security Project)</a></li>
+            <li><a href="https://www.sans.org">SANS Institute</a></li>
+            <li><a href="https://www.cybrary.it">Cybrary</a></li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Final Project</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background: #F7EDDE;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .sidebar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #767B91;
+            padding: 8px 0;
+            top: 0;
+            position: fixed;
+            width: 100%;
+            left: 0;
+        }
+
+        .sidebar a {
+            color: #F7EDDE;
+            background-color: #ffffff2d;
+            text-decoration: none;
+            padding: 8px 6%;
+            transition: background-color 0.3s ease;
+            border-radius: 30px;
+        }
+
+        .sidebar a:hover {
+            background-color: #555;
+        }
+
+        .sidebar a.active {
+            background-color: #555;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #FFF;
+            color: #333;
+            border-radius: 20px;
+            padding: 30px;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        .content ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .content li {
+            margin-bottom: 10px;
+        }
+
+        .content pre code {
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <td>
+            <div class="sidebar">
+                <a href="Index.html">Home</a>
+                <a class="active"  href="Page2.html">Web Technologies</a>
+                <a href="Page3.html">Online Threats</a>
+                <a href="Page4.html">E-commerce</a>
+                <a href="Page5.html">Find me</a>
+                <a href="Citations.html">Citations</a>
+            </div>
+        </td>
+    </table>
+    <div class="content">
+    <h2>Web Technologies</h2>
+    <table style="margin: 0 auto;"></table>
+        <tr>
+            <td>
+                <h3>HTML</h3>
+                <p>HTML (HyperText Markup Language) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+            </td>
+            <td>
+                <h3>CSS</h3>
+                <p>CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+            </td>
+            <td>
+                <h3>JavaScript</h3>
+                <p>JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.</p>
+        </tr>
+    </table>
+    <table>
+            <td>
+                <h3>HTTP</h3>
+                <p>The Hypertext Transfer Protocol (HTTP) is an application protocol for distributed, collaborative, hypermedia information systems. HTTP is the foundation of data communication for the World Wide Web, where hypertext documents include hyperlinks to other resources that the user can easily access, for example by a mouse click or by tapping the screen in a web browser.</p>
+            </td>
+            <td>
+                <h3>HTTPS</h3>
+                <p>HTTPS (Hypertext Transfer Protocol Secure) is an extension of the Hypertext Transfer Protocol (HTTP). It is used for secure communication over a computer network, and is widely used on the Internet. In HTTPS, the communication protocol is encrypted using Transport Layer Security (TLS) or, formerly, Secure Sockets Layer (SSL). The protocol is therefore also often referred to as HTTP over TLS, or HTTP over SSL.</p>
+            </td>
+            <td>
+                <h3>FTP</h3>
+                <p>File Transfer Protocol (FTP) is a standard network protocol used for the transfer of computer files between a client and server on a computer network. FTP is built on a client-server model architecture using separate control and data connections between the client and the server.</p>
+            </td>
+        </tr>
+    </table>
+
+    <h2>HTTP Request Example:</h2>
+    <pre>
+        GET /index.html HTTP/1.1
+        Host: www.example.com
+        User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0
+        Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+        Accept-Language: en-US,en;q=0.5
+        Accept-Encoding: gzip, deflate, br
+        Connection: keep-alive
+        Upgrade-Insecure-Requests: 1
+    </pre>
+
+    <h2>HTML Example:</h2>
+    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Hello, World!&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Hello, World!&lt;/h1&gt;
+            &lt;p&gt;This is a simple HTML document.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+
+    <h2>HTTP Response Example:</h2>
+    <pre>
+        HTTP/1.1 200 OK
+        Date: Wed, 30 Mar 2024 12:00:00 GMT
+        Server: Apache/2.4.38 (Unix)
+        Content-Length: 1234
+        Content-Type: text/html; charset=UTF-8
+        
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Example Page&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Welcome to the Example Page&lt;/h1&gt;
+            &lt;p&gt;This is a sample response from the server.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+
+
+    <h2>External Resources</h2>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">HTTP - Mozilla Developer Network</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML - Mozilla Developer Network</a></li>
+        <li><a href="https://www.w3schools.com/html/">HTML - W3Schools</a></li>
+    </ul>
+    </div>
+</body>
+
+</html>

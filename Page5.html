@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Final Project</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background: #F7EDDE;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #2A324B;
+        }
+
+        .sidebar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #767B91;
+            padding: 8px 0;
+            top: 0;
+            position: fixed;
+            width: 100%;
+            left: 0;
+        }
+
+        .sidebar a {
+            color: #F7EDDE;
+            background-color: #ffffff2d;
+            text-decoration: none;
+            padding: 8px 6%;
+            transition: background-color 0.3s ease;
+            border-radius: 30px;
+        }
+
+        .sidebar a:hover {
+            background-color: #555;
+        }
+
+        .sidebar a.active {
+            background-color: #555;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #FFF;
+            color: #333;
+            border-radius: 20px;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        .content ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .content li {
+            margin-bottom: 10px;
+        }
+
+        .content pre code {
+            color: #000;
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #767B91;
+            padding: 8px 0;
+            margin-top: 10%;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            position: fixed;
+        }
+
+        .social-media a {
+            color: #F7EDDE;
+            background-color: #ffffff2d;
+            text-decoration: none;
+            padding: 8px 10%;
+            transition: background-color 0.3s ease;
+            border-radius: 30px;
+        }
+
+        .social-media a:hover {
+            background-color: #555;
+        }
+
+        .map {
+            padding-top: 1%;
+            align-items: center;
+            margin: 0 auto;
+            text-align: center;
+            
+        }
+        form {
+            padding-top: 60px;
+            align-items: center;
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+        }
+        img {
+            border: 3px solid black;
+            border-radius: 30px;
+        }
+
+    </style>
+</head>
+
+        <body>
+            <table border="1">
+                <td>
+                    <div class="sidebar">
+                        <a href="Index.html">Home</a>
+                        <a href="Page2.html">Web Technologies</a>
+                        <a href="Page3.html">Online Threats</a>
+                        <a href="Page4.html">E-commerce</a>
+                        <a class="active" href="Page5.html">Find me</a>
+                        <a href="Citations.html">Citations</a>
+                    </div>
+                </td>
+            </table>
+
+            <div class="content">
+                <div class="social-media">
+                    <a href="https://www.youtube.com/channel/UC9rYAoui_WpCr0xu__mneFQ">Youtube</a>
+                    <a href="https://twitter.com/Megaisdoodoo">Twitter</a>
+                    <a href="https://www.instagram.com/enricckque/">Instagram</a>
+            </div>
+
+        <div class="map">
+            </div>
+                </div>
+                
+                <form method="post">
+                    <h1 style="text-align: center;">Feedback Form</h1>
+                    <label for="feedback">Feedback:</label>
+                    <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+
+                <h1 style="text-align: center;">Where to find me: University of Windsor</h1>
+                <div style="padding-bottom: 5%;" class="map">
+                    <a href="https://www.google.com/maps/place/University+of+Windsor/@42.3044893,-83.0628972,16z/data=!4m6!3m5!1s0x883b2d77c6ec4bef:0x1a44f1192a4e41ee!8m2!3d42.3043142!4d-83.066039!16zL20vMDF5OXBr?hl=en&entry=ttu">
+                        <img src="uwindsor.png" alt="University of Windsor Map">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
